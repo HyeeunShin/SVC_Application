@@ -10,12 +10,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/baskin_b"
-        android:text="TEST) 주보액티비티"
+        android:text="주일 오전 1부 예배"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="124dp"
         tools:layout_editor_absoluteY="118dp" />
+
 
 
 

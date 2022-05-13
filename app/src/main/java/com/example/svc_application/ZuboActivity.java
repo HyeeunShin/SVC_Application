@@ -11,7 +11,7 @@ public class ZuboActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zubo_activity);
+        setContentView(R.layout.fir_zubo_activity);
 
 
         Button zubo_home_btn = (Button) findViewById(R.id.zb_Home_btn);
