@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#46BEFF">
+
+    <TextView
+        android:id="@+id/open_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kwontaek"
+        android:text="주님 비전에 사로잡힌"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <TextView
+        android:id="@+id/open_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/kwontaek"
+        android:gravity="center"
+        android:text="선교비전교회"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintTop_toBottomOf="@+id/open_top"
+        app:layout_constraintTop_toTopOf="@+id/open_top"
+        tools:layout_editor_absoluteX="59dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
