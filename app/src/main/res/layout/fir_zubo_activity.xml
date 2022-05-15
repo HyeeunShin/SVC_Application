@@ -1,33 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
 
 
     <TextView
-        android:id="@+id/zubo_textview"
+        android:id="@+id/fir_zubo_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/baskin_b"
+        android:fontFamily="@font/kwontaek"
         android:text="주일 오전 1부 예배"
-        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/fir_zubo_muksang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/main_bold"
+        android:layout_below="@id/fir_zubo_textview"
+        android:layout_marginTop="50dp"
+
+        android:text="묵상기도  -------------  인도자"
         android:textColor="#000000"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="118dp" />
+        />
+    <TextView
+        android:id="@+id/fir_zubo_sinang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_muksang"
+        android:layout_marginTop="20dp"
 
+        android:fontFamily="@font/main_bold"
+        android:text="신앙고백  -------------  다같이"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/fir_zubo_kyongbae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_sinang"
+        android:layout_marginTop="20dp"
 
+        android:fontFamily="@font/main_bold"
+        android:text="경배와찬양 ---- 예배팀 ---- 다같이"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
 
+    <TextView
+        android:id="@+id/fir_zubo_daepyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_kyongbae"
+        android:layout_marginTop="20dp"
 
+        android:fontFamily="@font/main_bold"
+        android:text="대표기도 -----------"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/fir_zubo_represent_prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_daepyo"
+        android:layout_marginTop="20dp"
 
+        android:fontFamily="@font/main_bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
 
     <Button
         android:id="@+id/zb_Home_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_represent_prayer"
         android:text="Home"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="526dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+         />
+
+</RelativeLayout>
