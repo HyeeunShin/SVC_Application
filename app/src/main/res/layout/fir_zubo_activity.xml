@@ -6,83 +6,229 @@
     android:orientation="vertical"
     >
 
-
     <TextView
         android:id="@+id/fir_zubo_textview"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/kwontaek"
         android:text="주일 오전 1부 예배"
+        android:gravity="center"
         android:textColor="#000000"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        />
 
     <TextView
         android:id="@+id/fir_zubo_muksang"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/main_bold"
         android:layout_below="@id/fir_zubo_textview"
         android:layout_marginTop="50dp"
-
         android:text="묵상기도  -------------  인도자"
         android:textColor="#000000"
         android:textSize="20sp"
+        android:gravity="center"
         />
+
     <TextView
         android:id="@+id/fir_zubo_sinang"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fir_zubo_muksang"
         android:layout_marginTop="20dp"
-
         android:fontFamily="@font/main_bold"
         android:text="신앙고백  -------------  다같이"
         android:textColor="#000000"
         android:textSize="20sp"
+        android:gravity="center"
         />
+
     <TextView
         android:id="@+id/fir_zubo_kyongbae"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fir_zubo_sinang"
         android:layout_marginTop="20dp"
-
         android:fontFamily="@font/main_bold"
         android:text="경배와찬양 ---- 예배팀 ---- 다같이"
         android:textColor="#000000"
         android:textSize="20sp"
+        android:gravity="center"
         />
-
-    <TextView
-        android:id="@+id/fir_zubo_daepyo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/fir_zubo_kyongbae"
-        android:layout_marginTop="20dp"
-
-        android:fontFamily="@font/main_bold"
-        android:text="대표기도 -----------"
-        android:textColor="#000000"
-        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/fir_zubo_represent_prayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fir_zubo_daepyo"
+        android:layout_below="@id/fir_zubo_kyongbae"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="대표기도 -----------"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
 
+    <!--대표기도 변수-->
+    <TextView
+        android:id="@+id/fir_zubo_represent_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/fir_zubo_kyongbae"
+        android:layout_toRightOf="@id/fir_zubo_represent_prayer"
+        android:fontFamily="@font/main_bold"
+        android:text="variable"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fir_zubo_bible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/fir_zubo_represent_prayer"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="성경봉독 -----------"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!--성경 변수-->
+    <TextView
+        android:id="@+id/fir_zubo_bible_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="variable"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/fir_zubo_represent_prayer"
+        android:layout_toRightOf="@id/fir_zubo_bible"
         android:fontFamily="@font/main_bold"
         android:textColor="#000000"
         android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/fir_zubo_kyo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_bible_v"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="교제 --------------- 다같이"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/fir_zubo_malsum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_kyo"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="말씀 ------------ 신천묵 목사"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <!--제목 변수-->
+    <TextView
+        android:id="@+id/fir_zubo_malsum_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_malsum"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kwontaek"
+        android:text="제목: Variable"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/fir_zubo_donate_prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_malsum_v"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="헌금기도 -----------"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!--헌금기도 변수-->
+    <TextView
+        android:id="@+id/fir_zubo_danate_pv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="variable"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/fir_zubo_malsum_v"
+        android:layout_toRightOf="@id/fir_zubo_donate_prayer"
+        android:fontFamily="@font/main_bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/fir_zubo_donate_worship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_donate_prayer"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="봉헌찬양 -----------"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!--봉헌찬양 변수-->
+    <TextView
+        android:id="@+id/fir_zubo_danate_worship_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_danate_pv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/fir_zubo_donate_worship"
+        android:fontFamily="@font/main_bold"
+        android:text="variable"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fir_zubo_chukdo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fir_zubo_donate_worship"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="축도 ------------- 신천묵 목사"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
         />
 
     <Button
         android:id="@+id/zb_Home_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fir_zubo_represent_prayer"
+        android:layout_below="@id/fir_zubo_chukdo"
+        android:layout_marginLeft = "150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#46BEFF"
+        android:fontFamily="@font/mobile_title"
         android:text="Home"
-         />
+        android:textAlignment="center"
+        android:textSize="15sp" />
 
 </RelativeLayout>

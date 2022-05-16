@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/after_zubo_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+
+        android:fontFamily="@font/kwontaek"
+        android:gravity="center"
+        android:text="주일 오후 예배"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/after_zubo_kyongbae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/after_zubo_textview"
+        android:fontFamily="@font/main_bold"
+        android:text="경배와찬양 ---- 예배팀 ---- 다같이"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/after_zubo_pray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/after_zubo_kyongbae"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="합심기도 ------------- 다같이"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/after_zubo_qt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/after_zubo_pray"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="큐티나눔 ---------- 신천묵 목사"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/after_zubo_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/after_zubo_qt"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="주기도문 ------------ 부서별로"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/zb_Home_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/after_zubo_final"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        android:background="#46BEFF"
+        android:fontFamily="@font/mobile_title"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        />
+
+</RelativeLayout>

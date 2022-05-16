@@ -13,11 +13,27 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity);
 
-        Button menu_zubo_btn = (Button) findViewById(R.id.zubo_btn);
-        menu_zubo_btn.setOnClickListener(new View.OnClickListener() {
+        Button menu_fir_zubo_btn = (Button) findViewById(R.id.fir_zubo_btn);
+        menu_fir_zubo_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ZuboActivity.class);
+                Intent intent = new Intent(getApplicationContext(), FirZuboActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button menu_sec_zubo_btn = (Button) findViewById(R.id.sec_zubo_btn);
+        menu_sec_zubo_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SecZuboActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button menu_after_zubo_btn = (Button) findViewById(R.id.after_zubo_btn);
+        menu_after_zubo_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AfterZuboActivity.class);
                 startActivity(intent);
             }
         });

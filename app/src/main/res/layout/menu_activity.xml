@@ -6,53 +6,72 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-    <Button
+<Button
         android:id="@+id/fir_zubo_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="{1부 예배}"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:background="#46BEFF"
+        android:fontFamily="@font/mobile_title"
+        android:text="주일 오전 1부 예배"
+        android:textAlignment="center"
+        android:textSize="17sp"
         />
 
     <Button
         android:id="@+id/sec_zubo_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:layout_below="@id/fir_zubo_btn"
-        android:text="{2부 예배}"
+        android:text="주일 오전 2부 예배"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:background="#46BEFF"
+        android:textAlignment="center"
+        android:fontFamily="@font/mobile_title"
+        android:textSize="17sp"
         />
+
     <Button
-        android:id="@+id/afternoon_zubo_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="{오후 예배}"
+        android:id="@+id/after_zubo_btn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:layout_below="@id/sec_zubo_btn"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:background="#46BEFF"
+        android:fontFamily="@font/mobile_title"
+        android:text="주일 오후 예배"
+        android:textAlignment="center"
+        android:textSize="17sp"
         />
 
     <Button
         android:id="@+id/news_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:text="SVC NEWS"
-        android:layout_below="@id/afternoon_zubo_btn"
+        android:layout_below="@id/after_zubo_btn"
+        android:textSize="17sp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:background="#46BEFF"
+        android:textAlignment="center"
+        android:fontFamily="@font/mobile_title"
         />
 
     <Button
         android:id="@+id/song_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="새로운 찬양"
-        android:layout_below="@id/afternoon_zubo_btn"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/news_btn"
+        android:textSize="17sp"
+        android:background="#46BEFF"
+        android:fontFamily="@font/mobile_title"
+        android:textAlignment="center"
         />
 
 </RelativeLayout>
