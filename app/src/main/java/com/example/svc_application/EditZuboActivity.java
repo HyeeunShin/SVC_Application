@@ -16,7 +16,7 @@ public class EditZuboActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_activity);
 //
-       ZuboItems zubo = new ZuboItems();
+       ZuboItems zubo = new ZuboItems("value","value","value","value","value","value","value");
 //
         EditText id_rp_pr_1 = (EditText) findViewById(R.id.edittext_fir_rp_pr);
         EditText id_rp_pr_2 = (EditText) findViewById(R.id.edittext_sec_rp_pr);

@@ -13,6 +13,8 @@ public class FirZuboActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fir_zubo_activity);
+        ZuboItems zubo_list = new ZuboItems();
+
         TextView id_rppr_1 = (TextView) findViewById(R.id.fir_zubo_represent_v);
         TextView id_bible = (TextView) findViewById(R.id.fir_zubo_bible_v);
         TextView id_title = (TextView) findViewById(R.id.fir_zubo_malsum_v);
@@ -20,13 +22,24 @@ public class FirZuboActivity extends AppCompatActivity {
         TextView id_dows = (TextView) findViewById(R.id.fir_zubo_danate_worship_v);
 
         Intent get_intent = getIntent();
-        ZuboItems zubo_list = (ZuboItems) get_intent.getSerializableExtra("zuboData");
 
-        id_title.setText(zubo_list.getTitle());
-        id_bible.setText(zubo_list.getBible());
-        id_rppr_1.setText(zubo_list.getRpPr1());
-        id_dopr_1.setText(zubo_list.getDoPr1());
-        id_dows.setText(zubo_list.getFnWs());
+          ZuboItems zubo_obj = (ZuboItems) get_intent.getSerializableExtra("zuboData");
+
+          if(zubo_obj==null){
+            id_title.setText(zubo_list.getTitle());
+            id_bible.setText(zubo_list.getBible());
+            id_rppr_1.setText(zubo_list.getRpPr1());
+            id_dopr_1.setText(zubo_list.getDoPr1());
+            id_dows.setText(zubo_list.getFnWs());
+        }
+         else {
+              id_title.setText(zubo_obj.getTitle());
+              id_bible.setText(zubo_obj.getBible());
+              id_rppr_1.setText(zubo_obj.getRpPr1());
+              id_dopr_1.setText(zubo_obj.getDoPr1());
+              id_dows.setText(zubo_obj.getFnWs());
+          }
+
 
    //     Intent get_intent_in1 = getIntent();
 

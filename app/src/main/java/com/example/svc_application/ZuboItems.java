@@ -3,16 +3,16 @@ import java.io.Serializable;
 
 public class ZuboItems implements Serializable{
 
-    private String title;
-    private String bible;
-    private String repre_prayer_1;
-    private String donate_prayer_1;
-    private String repre_prayer_2;
-    private String donate_prayer_2;
-    private String final_worship;
+    private String title="3.4% 다움";
+    private String bible="John 3:16";
+    private String repre_prayer_1="신혜은";
+    private String donate_prayer_1="김민선";
+    private String repre_prayer_2="김성현";
+    private String donate_prayer_2="김지영";
+    private String final_worship="시 선";
 
+    public ZuboItems(String title, String bible, String rppr, String dppr, String rppr2, String dppr2, String dows){}
     public ZuboItems(){}
-
 
     public String getTitle() {
         return title;

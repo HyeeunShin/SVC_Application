@@ -17,6 +17,7 @@
         android:text="대표기도: "
         android:textColor="#000000"
         android:textSize="20sp" />
+
     <TextView
         android:id="@+id/edit_fir_rp_prayer"
         android:layout_width="wrap_content"
@@ -41,16 +42,16 @@
         android:fontFamily="@font/main_bold"
         android:hint="입력하세요."
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
 
     <TextView
         android:id="@+id/edit_sec_rp_prayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edit_rp_prayer"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/edit_bible"
-        android:layout_below="@id/edit_rp_prayer"
         android:fontFamily="@font/main_bold"
         android:text="2부) "
         android:textColor="#000000"
@@ -69,20 +70,21 @@
         android:fontFamily="@font/main_bold"
         android:hint="입력하세요."
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
 
 
     <TextView
         android:id="@+id/edit_bible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edit_sec_rp_prayer"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/edit_sec_rp_prayer"
         android:fontFamily="@font/main_bold"
         android:text="성경봉독 범위: "
         android:textColor="#000000"
         android:textSize="20sp" />
+
     <TextView
         android:id="@+id/edit_donate_pray_invi2"
         android:layout_width="wrap_content"
@@ -110,21 +112,22 @@
         android:fontFamily="@font/main_bold"
         android:hint="입력하세요."
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
+
     <TextView
         android:id="@+id/edit_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_bible"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/edittext_bible"
         android:fontFamily="@font/main_bold"
         android:text="말씀 제목: "
         android:textColor="#000000"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/edit_donate_pray_invi"
+        android:id="@+id/edit_donate_pray_invi8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/edittext_bible"
@@ -133,9 +136,9 @@
         android:layout_toRightOf="@id/edit_bible"
         android:fontFamily="@font/main_bold"
         android:text="1부) "
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        tools:visibility="invisible" />
+        />
 
     <EditText
         android:id="@+id/edittext_title"
@@ -145,31 +148,32 @@
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/edit_donate_pray_invi"
+        android:layout_toRightOf="@id/edit_donate_pray_invi8"
         android:background="@color/gray"
         android:fontFamily="@font/main_bold"
         android:hint="입력하세요."
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
 
     <TextView
         android:id="@+id/edit_donate_pray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edit_title"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/edit_title"
         android:fontFamily="@font/main_bold"
         android:text="헌금기도: "
         android:textColor="#000000"
         android:textSize="20sp" />
+
     <TextView
         android:id="@+id/edit_donate_pray_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edit_title"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/edit_title"
         android:layout_toRightOf="@id/edit_bible"
         android:fontFamily="@font/main_bold"
         android:text="1부) "
@@ -189,7 +193,7 @@
         android:fontFamily="@font/main_bold"
         android:hint="입력하세요."
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
 
     <TextView
         android:id="@+id/edit_donate_pray_2"
@@ -217,15 +221,15 @@
         android:fontFamily="@font/main_bold"
         android:hint="입력하세요."
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
 
     <TextView
         android:id="@+id/edit_final_worship"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_donate_pray_2"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/edittext_donate_pray_2"
         android:fontFamily="@font/main_bold"
         android:text="봉헌찬양: "
         android:textColor="#000000"
@@ -241,9 +245,9 @@
         android:layout_toRightOf="@id/edit_bible"
         android:fontFamily="@font/main_bold"
         android:text="1부) "
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        tools:visibility="invisible" />
+         />
 
     <EditText
         android:id="@+id/edittext_final_worship"
@@ -258,7 +262,7 @@
         android:fontFamily="@font/main_bold"
         android:hint="입력하세요."
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="23sp" />
 
 
     <Button
