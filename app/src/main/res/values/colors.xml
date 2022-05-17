@@ -10,6 +10,6 @@
     <color name="colorPrimary">#FFC107</color>
     <color name="colorPrimaryDark">#FF7043</color>
     <color name="colorAccent">#46BEFF</color>
-    <color name="colorGray">#8C8C8C</color>
+    <color name="gray">#8C8C8C</color>
     <color name="sgBlue">#46BEFF</color>
 </resources>

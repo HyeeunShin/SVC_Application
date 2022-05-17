@@ -1,11 +1,276 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="center"
+    android:gravity="top"
     android:orientation="vertical"
     android:padding="10dp">
 
+    <TextView
+        android:id="@+id/edit_rp_prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main_bold"
+        android:text="대표기도: "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/edit_fir_rp_prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_bible"
+        android:fontFamily="@font/main_bold"
+        android:text="1부) "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edittext_fir_rp_pr"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_fir_rp_prayer"
+        android:background="@color/gray"
+        android:fontFamily="@font/main_bold"
+        android:hint="입력하세요."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_sec_rp_prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_bible"
+        android:layout_below="@id/edit_rp_prayer"
+        android:fontFamily="@font/main_bold"
+        android:text="2부) "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edittext_sec_rp_pr"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_rp_prayer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_fir_rp_prayer"
+        android:background="@color/gray"
+        android:fontFamily="@font/main_bold"
+        android:hint="입력하세요."
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
 
+    <TextView
+        android:id="@+id/edit_bible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edit_sec_rp_prayer"
+        android:fontFamily="@font/main_bold"
+        android:text="성경봉독 범위: "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/edit_donate_pray_invi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_bible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_bible"
+        android:fontFamily="@font/main_bold"
+        android:text="1부) "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edittext_bible"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_sec_rp_pr"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_donate_pray_invi2"
+        android:background="@color/gray"
+        android:fontFamily="@font/main_bold"
+        android:hint="입력하세요."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edittext_bible"
+        android:fontFamily="@font/main_bold"
+        android:text="말씀 제목: "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_donate_pray_invi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_bible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_bible"
+        android:fontFamily="@font/main_bold"
+        android:text="1부) "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edittext_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_bible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_donate_pray_invi"
+        android:background="@color/gray"
+        android:fontFamily="@font/main_bold"
+        android:hint="입력하세요."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_donate_pray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edit_title"
+        android:fontFamily="@font/main_bold"
+        android:text="헌금기도: "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/edit_donate_pray_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edit_title"
+        android:layout_toRightOf="@id/edit_bible"
+        android:fontFamily="@font/main_bold"
+        android:text="1부) "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edittext_donate_pray_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_donate_pray_1"
+        android:background="@color/gray"
+        android:fontFamily="@font/main_bold"
+        android:hint="입력하세요."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_donate_pray_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_donate_pray_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_bible"
+        android:fontFamily="@font/main_bold"
+        android:text="2부) "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edittext_donate_pray_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_donate_pray_1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_donate_pray_1"
+        android:background="@color/gray"
+        android:fontFamily="@font/main_bold"
+        android:hint="입력하세요."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_final_worship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edittext_donate_pray_2"
+        android:fontFamily="@font/main_bold"
+        android:text="봉헌찬양: "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_donate_pray_invi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_donate_pray_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_bible"
+        android:fontFamily="@font/main_bold"
+        android:text="1부) "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edittext_final_worship"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_donate_pray_2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/edit_donate_pray_invi3"
+        android:background="@color/gray"
+        android:fontFamily="@font/main_bold"
+        android:hint="입력하세요."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#46BEFF"
+        android:fontFamily="@font/mobile_title"
+        android:text="적용하기"
+        android:textAlignment="center"
+        android:textSize="25sp" />
 </RelativeLayout>
+

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-<Button
+    <Button
         android:id="@+id/fir_zubo_btn"
         android:layout_width="150dp"
         android:layout_height="70dp"
@@ -17,22 +17,20 @@
         android:fontFamily="@font/mobile_title"
         android:text="주일 오전 1부 예배"
         android:textAlignment="center"
-        android:textSize="17sp"
-        />
+        android:textSize="17sp" />
 
     <Button
         android:id="@+id/sec_zubo_btn"
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_below="@id/fir_zubo_btn"
-        android:text="주일 오전 2부 예배"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:background="#46BEFF"
-        android:textAlignment="center"
         android:fontFamily="@font/mobile_title"
-        android:textSize="17sp"
-        />
+        android:text="주일 오전 2부 예배"
+        android:textAlignment="center"
+        android:textSize="17sp" />
 
     <Button
         android:id="@+id/after_zubo_btn"
@@ -74,4 +72,28 @@
         android:textAlignment="center"
         />
 
+    <Button
+        android:id="@+id/edit_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:background="#C1DAE8"
+        android:fontFamily="@font/mobile_title"
+        android:text="수정하기(관리자권한)"
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/testedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/song_btn"
+        android:fontFamily="@font/main_bold"
+        android:text="test: "
+        android:textColor="#000000"
+        android:textSize="20sp" />
 </RelativeLayout>
